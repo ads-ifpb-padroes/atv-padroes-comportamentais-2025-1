@@ -1,11 +1,14 @@
 package br.edu.ifpb.ads.padroes.atv1.main;
 
+import br.edu.ifpb.ads.padroes.atv1.model.Disco;
 import br.edu.ifpb.ads.padroes.atv1.notifications.EmailNotificacao;
 import br.edu.ifpb.ads.padroes.atv1.notifications.PushNotificacao;
 import br.edu.ifpb.ads.padroes.atv1.notifications.SmsNotificacao;
 import br.edu.ifpb.ads.padroes.atv1.observer.UserObserver;
-import br.edu.ifpb.ads.padroes.atv1.repository.Disco;
 import br.edu.ifpb.ads.padroes.atv1.repository.RepositorioDiscos;
+import br.edu.ifpb.ads.padroes.atv1.interest.InteresseArtista;
+import br.edu.ifpb.ads.padroes.atv1.interest.InteresseGenero;
+import br.edu.ifpb.ads.padroes.atv1.interest.InteresseTitulo;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,9 +21,9 @@ public class Main {
         UserObserver maria = new UserObserver("Manu", new PushNotificacao());
 
         // Interesses
-        ana.adicionarInteresseTitulo("From Zero");
-        joao.adicionarInteresseArtista("Taylor Swift");
-        maria.adicionarInteresseGenero("Pop");
+        ana.adicionarInteresse(new InteresseTitulo("From Zero"));
+        joao.adicionarInteresse(new InteresseArtista("Taylor Swift"));
+        maria.adicionarInteresse(new InteresseGenero("Pop"));
 
         repositorio.registrarObserver(ana);
         repositorio.registrarObserver(joao);

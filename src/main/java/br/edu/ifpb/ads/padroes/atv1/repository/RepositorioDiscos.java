@@ -1,5 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1.repository;
 
+import br.edu.ifpb.ads.padroes.atv1.model.Disco;
 import br.edu.ifpb.ads.padroes.atv1.observer.Observer;
 
 import java.util.List;
