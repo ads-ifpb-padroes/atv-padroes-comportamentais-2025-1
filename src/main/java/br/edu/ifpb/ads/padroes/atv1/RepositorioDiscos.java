@@ -44,6 +44,14 @@ public class RepositorioDiscos {
         discos.remove(disco);
     }
 
+    public void addObservador (InteressadoObservador observador) {
+        interessados.add(observador);
+    }
+
+    public void removeObservador (InteressadoObservador observador) {
+        interessados.remove(observador);
+    }
+
 
     private void notificar(Disco disco) {
         interessados.forEach(observador -> {
