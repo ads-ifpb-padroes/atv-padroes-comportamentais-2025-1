@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.model;
 
 public class Disco {
 
@@ -44,5 +44,10 @@ public class Disco {
 
     public void setAnoLancamento(int anoLancamento) {
         this.anoLancamento = anoLancamento;
+    }
+
+    @Override
+    public String toString() {
+        return "Disco{artista='" + artista + "', titulo='" + titulo + "', genero='" + genero + "', anoLancamento=" + anoLancamento + "}";
     }
 }
