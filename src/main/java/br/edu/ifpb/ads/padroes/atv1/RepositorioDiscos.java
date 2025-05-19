@@ -16,8 +16,12 @@ public class RepositorioDiscos {
     private List<String> notificacoesDisco = new LinkedList<>();
     private List<String> notificacoesArtista = new LinkedList<>();
     private List<String> notificacoesGenero = new LinkedList<>();
+    private FormaNotificacao formaNotificacao;
 
-    private ServicoNotificacao servicoNotificacao = new ServicoNotificacao();
+    public RepositorioDiscos(FormaNotificacao formaNotificacao) {
+        this.formaNotificacao = formaNotificacao;
+    }
+
 
     public List<Disco> buscarDiscos(String titulo) {
         return discos.stream().filter(d -> d.getTitulo().toLowerCase()
@@ -69,15 +73,15 @@ public class RepositorioDiscos {
 
     private void notificar(Disco disco) {
         notificacoesDisco.stream().filter(d -> disco.getTitulo().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco adicionado: " + disco.getTitulo());
+            formaNotificacao.enviarNotificacao("Novo disco adicionado: " + disco.getTitulo());
         });
 
         notificacoesArtista.stream().filter(d -> disco.getArtista().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do artista: " + disco.getArtista());
+            formaNotificacao.enviarNotificacao("Novo disco do artista: " + disco.getArtista());
         });
 
         notificacoesGenero.stream().filter(d -> disco.getGenero().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do gênero: " + disco.getGenero());
+            formaNotificacao.enviarNotificacao("Novo disco do gênero: " + disco.getGenero());
         });
     }
 
