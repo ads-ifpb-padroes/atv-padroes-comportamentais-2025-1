@@ -1,4 +1,8 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.repositorio;
+
+import br.edu.ifpb.ads.padroes.atv1.ServicoNotificacao;
+import br.edu.ifpb.ads.padroes.atv1.interesse.Interessado;
+import br.edu.ifpb.ads.padroes.atv1.modelo.Disco;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,6 +15,8 @@ import java.util.List;
 public class RepositorioDiscos {
 
     private List<Disco> discos = new LinkedList<>();
+    private  List<Interessado> interessados = new LinkedList<>();
+
     private String canalNotificacao;
 
     private List<String> notificacoesDisco = new LinkedList<>();
@@ -40,7 +46,10 @@ public class RepositorioDiscos {
 
     public void addDisco(Disco disco) {
         discos.add(disco);
-        notificar(disco);
+        notificarInteressados(disco);
+    }
+    public  void  addInteressado(Interessado interessado){
+        interessados.add(interessado);
     }
 
     public void removeDisco(Disco disco) {
@@ -67,18 +76,12 @@ public class RepositorioDiscos {
         notificacoesGenero.add(genero);
     }
 
-    private void notificar(Disco disco) {
-        notificacoesDisco.stream().filter(d -> disco.getTitulo().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco adicionado: " + disco.getTitulo());
-        });
-
-        notificacoesArtista.stream().filter(d -> disco.getArtista().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do artista: " + disco.getArtista());
-        });
-
-        notificacoesGenero.stream().filter(d -> disco.getGenero().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do gênero: " + disco.getGenero());
-        });
+    private void notificarInteressados(Disco disco) {
+        for (Interessado i: interessados){
+            if (i.isInteressado(disco)){
+                i.notificar(disco);
+            }
+        }
     }
 
 }
