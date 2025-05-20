@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82dfac54-acaa-4c52-a4b8-f69435c3a800" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/Interessado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorArtista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorGenero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorTitulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacao/CanalNotificacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacao/NotificacaoPorEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacao/NotificacaoPorPush.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacao/NotificacaoPorSMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Disco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/modelo/Disco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/RepositorioDiscos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/repositorio/RepositorioDiscos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/ProdutoFisico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/Servico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/VisitorImprimir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/VisitorRelatorioDeImposto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
