@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.atv1;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -47,38 +47,12 @@ public class RepositorioDiscos {
         discos.remove(disco);
     }
 
-    public String getCanalNotificacao() {
-        return canalNotificacao;
-    }
-
-    public void setCanalNotificacao(String canalNotificacao) {
-        this.canalNotificacao = canalNotificacao;
-    }
-
-    public void addNotificacaoDisco(String disco) {
-        notificacoesDisco.add(disco);
-    }
-
-    public void addNotificacaoArtista(String artista) {
-        notificacoesArtista.add(artista);
-    }
-
-    public void addNotificacaoGenero(String genero) {
-        notificacoesGenero.add(genero);
+    public void setServicoNotificacao(ServicoNotificacao servicoNotificacao) {
+        this.servicoNotificacao = servicoNotificacao;
     }
 
     private void notificar(Disco disco) {
-        notificacoesDisco.stream().filter(d -> disco.getTitulo().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco adicionado: " + disco.getTitulo());
-        });
-
-        notificacoesArtista.stream().filter(d -> disco.getArtista().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do artista: " + disco.getArtista());
-        });
-
-        notificacoesGenero.stream().filter(d -> disco.getGenero().contains(d)).forEach(d -> {
-            servicoNotificacao.enviarNotificacao(canalNotificacao, "Novo disco do gênero: " + disco.getGenero());
-        });
+        servicoNotificacao.enviarNotificacao(disco);
     }
 
 }

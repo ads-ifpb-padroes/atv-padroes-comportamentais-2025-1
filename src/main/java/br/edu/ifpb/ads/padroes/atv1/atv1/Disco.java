@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.atv1;
 
 public class Disco {
 
