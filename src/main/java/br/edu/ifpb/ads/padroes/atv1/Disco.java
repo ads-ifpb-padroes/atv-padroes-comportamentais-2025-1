@@ -1,7 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1;
 
 public class Disco {
-
     private String artista;
     private String titulo;
     private String genero;
