@@ -1,6 +1,5 @@
 package br.edu.ifpb.ads.padroes.atv1.repositorio;
 
-import br.edu.ifpb.ads.padroes.atv1.ServicoNotificacao;
 import br.edu.ifpb.ads.padroes.atv1.interesse.Interessado;
 import br.edu.ifpb.ads.padroes.atv1.modelo.Disco;
 
@@ -12,18 +11,12 @@ import java.util.List;
  * Ela permite buscar discos por título, artista, gênero e ano de lançamento.
  * Além disso, permite adicionar e remover discos do repositório.
  */
-public class RepositorioDiscos {
+public class RepositorioDiscos implements  SubjectRepositorioDiscos {
 
     private List<Disco> discos = new LinkedList<>();
     private  List<Interessado> interessados = new LinkedList<>();
+    private Disco discoInteressado;
 
-    private String canalNotificacao;
-
-    private List<String> notificacoesDisco = new LinkedList<>();
-    private List<String> notificacoesArtista = new LinkedList<>();
-    private List<String> notificacoesGenero = new LinkedList<>();
-
-    private ServicoNotificacao servicoNotificacao = new ServicoNotificacao();
 
     public List<Disco> buscarDiscos(String titulo) {
         return discos.stream().filter(d -> d.getTitulo().toLowerCase()
@@ -46,41 +39,24 @@ public class RepositorioDiscos {
 
     public void addDisco(Disco disco) {
         discos.add(disco);
-        notificarInteressados(disco);
+        discoInteressado = disco;
+        notificacao();
     }
-    public  void  addInteressado(Interessado interessado){
+
+    @Override
+    public void add(Interessado interessado) {
         interessados.add(interessado);
     }
 
-    public void removeDisco(Disco disco) {
-        discos.remove(disco);
+    @Override
+    public void remove(Interessado interessado) {
+        interessados.remove(interessado);
     }
 
-    public String getCanalNotificacao() {
-        return canalNotificacao;
-    }
-
-    public void setCanalNotificacao(String canalNotificacao) {
-        this.canalNotificacao = canalNotificacao;
-    }
-
-    public void addNotificacaoDisco(String disco) {
-        notificacoesDisco.add(disco);
-    }
-
-    public void addNotificacaoArtista(String artista) {
-        notificacoesArtista.add(artista);
-    }
-
-    public void addNotificacaoGenero(String genero) {
-        notificacoesGenero.add(genero);
-    }
-
-    private void notificarInteressados(Disco disco) {
+    @Override
+    public void notificacao() {
         for (Interessado i: interessados){
-            if (i.isInteressado(disco)){
-                i.notificar(disco);
-            }
+            i.notificar(discoInteressado);
         }
     }
 

@@ -14,12 +14,10 @@ public class InteressadoPorArtista implements  Interessado{
     }
 
     @Override
-    public boolean isInteressado(Disco disco) {
-        return disco.getArtista().equalsIgnoreCase(artista);
-    }
-
-    @Override
     public void notificar(Disco disco) {
-        canal.enviarMensagem("Novo disco do Artista: " + disco.getArtista());
+        if (disco.getArtista().equalsIgnoreCase(artista)){
+            canal.enviarMensagem("Novo disco do Artista: " + disco.getArtista());
+        }
+
     }
 }

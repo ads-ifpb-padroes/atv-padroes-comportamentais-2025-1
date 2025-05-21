@@ -13,10 +13,10 @@ public class Main {
     public static void main(String[] args) {
         RepositorioDiscos repositorioDiscos = new RepositorioDiscos();
 
-        repositorioDiscos.addInteressado(new InteressadoPorArtista("Elis Regina",  new NotificacaoPorSMS()));
-        repositorioDiscos.addInteressado(new InteressadoPorArtista("Elis Regina",  new NotificacaoPorEmail()));
-        repositorioDiscos.addInteressado(new InteressadoPorGenero("Forro", new NotificacaoPorPush()));
-        repositorioDiscos.addInteressado(new InteressadoPorTitulo("Clube da Esquina", new NotificacaoPorEmail()));
+        repositorioDiscos.add(new InteressadoPorArtista("Elis Regina",  new NotificacaoPorSMS()));
+        repositorioDiscos.add(new InteressadoPorArtista("Elis Regina",  new NotificacaoPorEmail()));
+        repositorioDiscos.add(new InteressadoPorGenero("Forro", new NotificacaoPorPush()));
+        repositorioDiscos.add(new InteressadoPorTitulo("Clube da Esquina", new NotificacaoPorEmail()));
 
         repositorioDiscos.addDisco(new Disco("Milton Nascimento", "Clube da Esquina", "MPB", 1972));
         repositorioDiscos.addDisco(new Disco("Elis Regina", "Falso Brilhante", "MPB", 1976));

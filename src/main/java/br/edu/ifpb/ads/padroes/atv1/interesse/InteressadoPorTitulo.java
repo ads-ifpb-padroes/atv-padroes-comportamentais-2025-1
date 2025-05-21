@@ -12,13 +12,13 @@ public class InteressadoPorTitulo implements  Interessado{
         this.titulo = titulo;
         this.canal = canal;
     }
-    @Override
-    public boolean isInteressado(Disco disco) {
-        return disco.getTitulo().equalsIgnoreCase(titulo);
-    }
 
     @Override
     public void notificar(Disco disco) {
-        canal.enviarMensagem("Novo disco com o título: " + disco.getTitulo());
+        if (disco.getTitulo().equalsIgnoreCase(titulo)){
+            canal.enviarMensagem("Novo disco com o título: " + disco.getTitulo());
+        }
+
+
     }
 }

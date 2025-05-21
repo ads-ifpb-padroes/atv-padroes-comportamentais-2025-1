@@ -12,13 +12,11 @@ public class InteressadoPorGenero implements  Interessado{
         this.genero = genero;
         this.canal = canal;
     }
-    @Override
-    public boolean isInteressado(Disco disco) {
-        return disco.getGenero().equalsIgnoreCase(genero);
-    }
 
     @Override
     public void notificar(Disco disco) {
-        canal.enviarMensagem("Novo disco do genero: " + disco.getGenero());
+        if (disco.getGenero().equalsIgnoreCase(genero)){
+            canal.enviarMensagem("Novo disco do Artista: " + disco.getGenero());
+        }
     }
 }

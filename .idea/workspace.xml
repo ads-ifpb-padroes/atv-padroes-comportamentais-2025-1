@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82dfac54-acaa-4c52-a4b8-f69435c3a800" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/ProdutoFisico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Item/Servico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/VisitorImprimir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv2/visitor/VisitorRelatorioDeImposto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/repositorio/SubjectRepositorioDiscos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/Interessado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/Interessado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorArtista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorArtista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorGenero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorGenero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorTitulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorTitulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/repositorio/RepositorioDiscos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/repositorio/RepositorioDiscos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/Interessado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/Interessado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorArtista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorArtista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorGenero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorGenero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorTitulo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteressadoPorTitulo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/repositorio/RepositorioDiscos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/repositorio/RepositorioDiscos.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
