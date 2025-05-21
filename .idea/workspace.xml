@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68a088a3-d759-4d45-960a-99d6c2a54576" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Disco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/Observer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/RepositorioDiscos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/Interesse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseArtista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseGenero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseTitulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoPush.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoSMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/ads/padroes/atv1/notificacoes/ServicoNotificacoes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/Disco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/RepositorioDiscos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/Interesse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseArtista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseGenero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/interesse/InteresseTitulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoPush.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/notificacoes/NotificacaoSMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/ifpb/ads/padroes/atv1/notificacoes/ServicoNotificacoes.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2xNVjfVZQlO2Mvr02k5iPEw8TkL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/damfe/OneDrive/Documentos/AtividadePadroes/atv-padroes-comportamentais-2025-1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68a088a3-d759-4d45-960a-99d6c2a54576" name="Changes" comment="" />
+      <created>1747778657341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747778657341</updated>
+      <workItem from="1747778657686" duration="12078000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
