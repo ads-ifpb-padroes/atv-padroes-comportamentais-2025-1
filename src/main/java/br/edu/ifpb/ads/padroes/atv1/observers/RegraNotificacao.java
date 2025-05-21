@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1.observer;
+package br.edu.ifpb.ads.padroes.atv1.observers;
 
 import br.edu.ifpb.ads.padroes.atv1.Disco;
 

@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1.notification;
+package br.edu.ifpb.ads.padroes.atv1.notifications;
 
 public class Email implements CanalNotificacao {
     @Override

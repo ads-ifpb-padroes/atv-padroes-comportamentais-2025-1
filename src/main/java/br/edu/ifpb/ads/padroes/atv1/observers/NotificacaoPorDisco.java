@@ -1,7 +1,7 @@
-package br.edu.ifpb.ads.padroes.atv1.observer;
+package br.edu.ifpb.ads.padroes.atv1.observers;
 
 import br.edu.ifpb.ads.padroes.atv1.Disco;
-import br.edu.ifpb.ads.padroes.atv1.notification.CanalNotificacao;
+import br.edu.ifpb.ads.padroes.atv1.notifications.CanalNotificacao;
 
 public class NotificacaoPorDisco implements RegraNotificacao {
     private String tituloDisco;
