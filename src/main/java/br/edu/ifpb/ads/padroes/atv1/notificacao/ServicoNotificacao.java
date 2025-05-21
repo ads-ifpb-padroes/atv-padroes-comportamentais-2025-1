@@ -1,4 +1,6 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.notificacao;
+import br.edu.ifpb.ads.padroes.atv1.EmailNotificacao;
+
 import java.util.HashMap;
 import java.util.Map;
 

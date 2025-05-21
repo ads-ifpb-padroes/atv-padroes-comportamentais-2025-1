@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.notificacao;
 
 public class SmsNotificacao implements NotificacaoStrategy {
     @Override

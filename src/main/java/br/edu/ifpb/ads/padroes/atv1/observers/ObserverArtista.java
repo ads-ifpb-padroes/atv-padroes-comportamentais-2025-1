@@ -1,4 +1,7 @@
-package br.edu.ifpb.ads.padroes.atv1;
+package br.edu.ifpb.ads.padroes.atv1.observers;
+
+import br.edu.ifpb.ads.padroes.atv1.Disco;
+import br.edu.ifpb.ads.padroes.atv1.notificacao.ServicoNotificacao;
 
 import java.util.LinkedList;
 import java.util.List;

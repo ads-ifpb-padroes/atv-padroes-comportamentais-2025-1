@@ -1,12 +1,14 @@
-package Atv2;
+package Atv2.Itens;
+
+import Atv2.Visitor;
 
 import java.math.BigDecimal;
 
-public class ProdutoFisico implements Item{
+public class Servico implements Item {
     private String nome;
     private BigDecimal valor;
 
-    public ProdutoFisico(String nome, BigDecimal valor) {
+    public Servico(String nome, BigDecimal valor) {
         this.nome = nome;
         this.valor = valor;
     }
@@ -15,7 +17,8 @@ public class ProdutoFisico implements Item{
     public void aceitar(Visitor visitor) {
         visitor.visitar(this);
     }
-    BigDecimal getValor() {
+
+    public BigDecimal getValor() {
         return valor;
     }
 }

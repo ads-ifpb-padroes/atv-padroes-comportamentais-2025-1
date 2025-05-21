@@ -1,5 +1,8 @@
 package Atv2;
 
+import Atv2.Itens.ProdutoFisico;
+import Atv2.Itens.Servico;
+
 public class Imprimir implements Visitor{
     @Override
     public void visitar(ProdutoFisico produto) {

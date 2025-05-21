@@ -1,5 +1,8 @@
 package Atv2;
 
+import Atv2.Itens.ProdutoFisico;
+import Atv2.Itens.Servico;
+
 import java.math.BigDecimal;
 
 public class RelatorioImpostos  implements Visitor{
