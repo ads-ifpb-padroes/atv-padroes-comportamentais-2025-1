@@ -1,7 +1,6 @@
 import VisitorsImpressao.ImprimirConcreteVisitor;
-import VisitorsImpressao.ImprimirVisitor;
-import VisitorsRelatorio.CalculoConcreteVisitor;
-import VisitorsRelatorio.CalculoVisitor;
+import VisitorsImpressao.CalculoConcreteVisitor;
+import VisitorsImpressao.Visitor;
 import produto.Produto;
 import produto.ProdutoFisico;
 import produto.Servico;
@@ -11,10 +10,13 @@ public class Main {
         Produto produto = new ProdutoFisico(20);
         Produto servico = new Servico(50);
 
-        CalculoVisitor calculadora = new CalculoConcreteVisitor();
-        ImprimirVisitor imprimir = new ImprimirConcreteVisitor();
+        Visitor imprimir = new ImprimirConcreteVisitor();
+        Visitor calcular = new CalculoConcreteVisitor();
 
-        produto.aceitarCalculo(calculadora);
-        produto.aceitarImpressao(imprimir);
+        produto.aceitar(imprimir);
+        produto.aceitar(calcular);
+
+        servico.aceitar(imprimir);
+        servico.aceitar(calcular);
     }
 }

@@ -1,7 +1,6 @@
 package produto;
 
-import VisitorsImpressao.ImprimirVisitor;
-import VisitorsRelatorio.CalculoVisitor;
+import VisitorsImpressao.Visitor;
 
 public class ProdutoFisico implements Produto {
     private double preco;
@@ -15,12 +14,7 @@ public class ProdutoFisico implements Produto {
     }
 
     @Override
-    public void aceitarCalculo(CalculoVisitor calculo) {
-        calculo.calcular(this);
-    }
-
-    @Override
-    public void aceitarImpressao(ImprimirVisitor imprimirVisitor) {
-        imprimirVisitor.imprimir(this);
+    public void aceitar(Visitor visitor) {
+        visitor.visitar(this);
     }
 }
