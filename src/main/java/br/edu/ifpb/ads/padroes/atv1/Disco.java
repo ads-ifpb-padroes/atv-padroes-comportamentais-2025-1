@@ -1,11 +1,20 @@
 package br.edu.ifpb.ads.padroes.atv1;
 
+import java.util.Objects;
+
 public class Disco {
 
     private String artista;
     private String titulo;
     private String genero;
     private int anoLancamento;
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Disco disco = (Disco) o;
+        return anoLancamento == disco.anoLancamento && Objects.equals(artista, disco.artista) && Objects.equals(titulo, disco.titulo) && Objects.equals(genero, disco.genero);
+    }
 
     public Disco(String artista, String titulo, String genero, int anoLancamento) {
         this.artista = artista;
