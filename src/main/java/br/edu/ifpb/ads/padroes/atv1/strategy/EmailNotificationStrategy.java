@@ -1,9 +1,9 @@
 package br.edu.ifpb.ads.padroes.atv1.strategy;
 
-public class Email implements ServicoNotificacaoStrategy {
+public class EmailNotificationStrategy implements NotificationStrategy {
 
     @Override
-    public void enviarNotificacao(String message) {
+    public void sendNotification(String message) {
         System.out.println("Enviando EMAIL: " + message);
     }
 }

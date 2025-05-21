@@ -1,9 +1,9 @@
 package br.edu.ifpb.ads.padroes.atv1.strategy;
 
-public class Push implements ServicoNotificacaoStrategy {
+public class PushNotificationStrategy implements NotificationStrategy {
 
     @Override
-    public void enviarNotificacao(String message) {
+    public void sendNotification(String message) {
         System.out.println("Enviando PUSH NOTIFICATION: " + message);
     }
 }
